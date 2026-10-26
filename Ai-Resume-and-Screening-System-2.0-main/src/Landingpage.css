@@ -1,0 +1,14 @@
+.Landing-container{
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+    background: linear-gradient(to right, #566B94 10%, #FFFFFF 93%);
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    min-height:88vh;   
+}
+
+.Landing-container h1{
+    color: #004;
+}

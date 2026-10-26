@@ -1,0 +1,663 @@
+.PRP-Login-Page-Container{
+    padding: 10px 25px;
+    background: linear-gradient(to left, #ffffff 20% , #566B94 98%  );
+    min-height: 100%;
+    max-height: 1080px;
+    display: flex;
+    gap: 100px;
+    font-family:'Open Sans', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+.Prp-Login-Page-Left-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: 10px;
+}
+.Prp-Login-Page-Left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 900px;
+}
+.Prp-Product-Header-Container{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    gap: 10px;
+}
+
+.Prp-ProductLogo-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #132A56;
+    padding: 12.5px;
+    border-radius:12px ;
+}
+.Prp-ProductLogo-img{
+    max-width: 22px;
+}
+
+.Prp-Product-Title{
+    margin: 0;
+    font-size: 20px;
+}
+.Prp-Product-SubTitle{
+    margin: 0;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.Prp-Seperator-Dot-white{
+    min-height: 4px;
+    min-width: 4px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin-top: 3px;
+}
+.Prp-Product-HeroSec-Container{
+    display: flex;
+    flex-direction: column;
+}
+.Prp-Product-HeroSec-Container{
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    gap: 8px;
+}
+.Prp-Product-HeroSec-welcome-Text{
+    font-size: 36px;
+    margin: 0;
+    color: #132A56;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.Prp-Product-HeroSec-Text{
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+}
+
+.Prp-Product-HeroSec-sub-heading{
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+}
+.Prp-Product-cards-wrapper{
+    display: flex;
+    color: #ffffff;
+    gap: 20px;
+}
+.Prp-Product-cards-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    max-width: 260px;
+    /* min-width: 200px; */
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #FFFFFFD9;
+    border-radius: 12px;
+
+}
+
+.Prp-Product-cards-image-container{
+    width: 60px;
+    height: 60px;
+    background-color: #132A56;
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+    align-items: center;
+}
+.Prp-Product-Image-Wrapper{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: #109D58;
+}
+.Prp-Product-cards-count{
+    color: #132A56;
+    font-size: 30px;
+
+}
+.Prp-Product-Image-Wrapper img{
+    width: 12px;
+    height: 7px;
+}
+.Prp-Product-cards-icon{
+    width: 20px;
+}
+.Prp-Product-cards-sub-title{
+    font-size: 16px;
+    max-width: 196px;
+}
+.Prp-Product-cards-title{
+    font-size: 10.5px;
+    font-weight: 700;
+    color: #566B94;
+}
+.Prp-Login-Illustration-container{
+    display: flex;
+    justify-content: center;
+}
+.Prp-Login-Illustration-img{
+    max-width: 720px;
+    max-height: 449px;
+    width: 100%;
+}
+.Prp-Product-Info-Container{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    background-color: #D7D7D780;
+    padding: 12px 0;
+    border-radius: 10px;
+}
+.Prp-Product-Info-Container img{
+    max-width: 25px;
+    width: fit-content;
+}
+.Prp-Product-Info-text{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.Prp-Login-Page-Right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: #566B94; */
+    /* align-items: center; */
+    width: 600px;
+}
+.Prp-Login-Page-Form-Header{
+    display: flex;
+    flex-direction: column;
+
+}
+.Prp-Login-Page-Form-Text{
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    color: #132A56;
+}
+.Prp-Login-Page-Message{
+    font-size: 16px;
+    margin: 0;
+    color: #132A5699;
+}
+.Prp-Login-Page-form{
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    width: 100%;
+    gap: 12px;
+    padding: 10px 30px;
+}
+.Prp-Login-Input-Wrapper{
+   display: flex;
+   align-items: center;
+   padding: 15px 16px;
+   border: 1px solid #C7C4D8;
+   width: 100%;
+   gap: 13px;
+   border-radius: 8px;
+   background-color: #ffffff;
+}
+.Prp-Login-Input-Icon-Wrapper{
+    display: flex;
+    align-items: center;
+}
+.Prp-Login-Input-Container label{
+    font-size: 14px;
+    color: #111112;
+}
+.Prp-Login-email-icon{
+    width: 20px;
+    height: 16px;
+}
+.Prp-Login-pwd-icon{
+    width: 16px;
+    height: 21px;
+}
+.Prp-Login-pwd-eye-icon{
+    width: 22px;
+    height: 16px;
+}
+
+.Prp-Login-Input{
+    background-color: black;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    max-width: 600px;
+    font-size: 16px;
+    color: #132A56;   
+}
+.Prp-Login-Input ::placeholder{
+    color: #B7B7B7;
+}
+.Prp-Login-forgot-Link-Wrappper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Prp-Login-forgot-Text{
+    font-size: 12px;
+    color: #176789;
+}
+.Prp-Login-Input-Container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.Prp-Login-Checkbox-Container{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+}
+.Prp-Login-Checkbox-Container input{
+    width: 24px;
+}
+.Prp-Login-Checkbox-Text{
+    color: #333334;
+    font-size: 14px;
+}
+.Prp-Login-Button{
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    color: #ffffff;
+    align-items: center;
+    gap: 7px;
+    justify-content: center;
+    background-color: #132A56;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.Prp-Login-Button-Icon{
+    width: 15px;
+    
+}
+.Prp-Login-Seperator{
+    height: 1px;
+    background-color: #272E40;
+    margin-top: 20px;
+}
+.Prp-Login-Alternative-Login{
+    display: flex;
+    justify-content: center;
+    /* background-color: #132A56; */
+}
+.Prp-Login-Alternative-Login-Text{
+    position: relative;
+    bottom: 25px;
+    background-color: #ffffff;
+    padding: 0 10px;
+    color: #464555;
+}
+.Prp-Login-Google-Button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #C7C4D8;
+    width: fit-content;
+    max-width: 188px;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 8px;
+}
+.Prp-Login-Account-Creation-Link{
+    font-size: 14px;
+    color: #333334;
+}
+.Prp-Login-Account-Creation-Link a{
+    color:#176789;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.Prp-Login-Google-icon{
+    max-width: 20px;
+}
+.Prp-Login-Social-Logins-Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.Prp-Login-NavLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    
+}
+.Prp-Login-NavLinks a{
+   text-decoration: none;
+   color: #272E40;
+   font-size: 12px;
+}
+.Prp-Seperator-Dot-Black{
+    min-height: 4px;
+    min-width: 4px;
+    background-color: #C7C4D8;
+    border-radius: 50%;
+    margin-top: 3px;
+}
+.error-msg {
+  color: red;
+  font-size: 12px;
+  /* margin-top: px; */
+  display: block;
+}
+
+.Prp-Login-Verification-Method{
+flex-grow: 1;
+}
+.Prp-Login-otp-inputs {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    /* background-color: #111112; */
+}
+.Prp-Login-otp-input-Error {
+    width: 45px;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid red;
+    border-radius: 8px;
+    outline: none;
+    background-color: #fff;
+    
+}
+.Prp-Login-otp-input {
+    width: 45px;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid #b0c4de;
+    border-radius: 8px;
+    outline: none;
+    background-color: #fff;
+    
+}
+.Prp-Login-otp-input:focus {
+    border-color: #176789;
+    box-shadow: 0 0 5px rgba(26, 43, 76, 0.2);
+}
+.Prp-Login-otp-input-Error:focus {
+    border-color: red;
+    box-shadow: 0 0 5px rgba(26, 43, 76, 0.2);
+}
+
+.Prp-Reset-Header-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.Prp-PasswordReset-Link-Form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+  justify-content: center;
+}
+
+.Prp-Reset-Illustration-img {
+  max-width: 750px;
+}
+
+
+.Prp-Reset-Header-Title {
+  font-size: 40px;
+  color: #132A56;
+}
+
+.Prp-Reset-Header-desc {
+  font-size: 16px;
+  color: #132A5699;
+}
+
+.Prp-Reset-mail-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.Prp-PasswordReset-Link-Img{
+    max-width: 80px;
+}
+
+.Prp-Reset-mail-wrapper img {
+  max-width: 25px;
+  width: 20px;
+  height: 15px;
+}
+
+.Prp-Reset-mail-Notify {
+  font-size: 20px;
+  color: #132A56;
+}
+
+.Prp-Reset-Link-mail {
+  color: #132A5699;
+}
+
+.Prp-ResetLink-Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.Prp-ResetLink-Wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Prp-resetLink-Seperator {
+  background: #00000080;
+  min-height: 1px;
+  flex-grow: 1;
+}
+
+.Prp-ResetLink-Icon {
+  max-width: 16px;
+}
+
+.Prp-ResetLink-text {
+  font-size: 14px;
+  color: #176789;
+}
+
+.Prp-Reset-timer {
+  color: #a0a9b7;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 1599px) {
+ 
+}
+@media screen and (max-width: 1599px) {
+    .PRP-Login-Page-Container { gap: 80px; }
+    .Prp-Login-Page-Left { width: 650px; gap: 15px; }
+    .Prp-Login-Social-Logins-Container{ gap: 15px;}
+    .Prp-Login-Input-Container{gap:5px}
+    .Prp-Login-otp-input{width: 60px; height: 60px;}
+    .Prp-Login-otp-input-Error{width: 60px; height: 60px;}
+    
+    
+    /* Fonts */
+    .Prp-Product-Title { font-size: 18px; }
+    .Prp-Product-SubTitle { font-size: 11px; }
+    .Prp-Product-HeroSec-welcome-Text { font-size: 24px;font-weight: 700; line-height: 25px; }
+    .Prp-Product-HeroSec-Text { font-size: 32px; line-height: 35px; }
+    .Prp-Product-HeroSec-sub-heading { font-size: 14px; line-height: 20px; }
+    .Prp-Product-cards-title { font-size: 10px;font-weight: 700; }
+    .Prp-Product-cards-sub-title{font-size: 13px;}
+    .Prp-Product-Info-text { font-size: 11px; }
+    .Prp-Login-Page-Form-Text { font-size: 28px; }
+    .Prp-Login-Page-Message { font-size: 15px; }
+    .Prp-Login-Input-Container label { font-size: 14px; }
+    .Prp-Login-Checkbox-Text{font-size: 13px};
+    .Prp-Login-Input { font-size: 15px; }
+    .Prp-Login-Account-Creation-Link, .Prp-Login-NavLinks a { font-size: 12px; }
+    .Prp-Login-forgot-Text{font-size: 13px;font-weight: 600;cursor: pointer;}
+    .Prp-Login-email-icon{width: 16px;height: 13px;}
+    .Prp-Login-pwd-icon{width: 16px;height: 18px;}
+    .Prp-Product-cards-count{font-size: 22px;}
+    
+
+    /* Paddings & Icons */
+    .Prp-ProductLogo-img-container { padding: 10px; }
+    .Prp-ProductLogo-img { max-width: 19px; }
+    .Prp-Product-cards-image-container { width: 40px; height: 40px; }
+    .Prp-Product-cards-icon { width: 16px; }
+    .Prp-Product-Info-Container img { max-width: 22px; }
+    .Prp-Login-Input-Wrapper { padding: 13px 14px; gap: 11px; }
+    .Prp-Login-Input-icon { width: 18px; height: 14px; }
+    .Prp-Login-Button-Icon { width: 12px; }
+    .Prp-Login-Google-icon { max-width: 18px; }
+    .Prp-Login-Illustration-img { max-width: 520px;max-height: 400px;}
+    /* .Prp-Login-Page-Right { width: 500px; } */
+    .Prp-Product-cards-container{width: 200px;}
+    .Prp-Login-Page-Left-container{height: 95vh;}
+    .Prp-Login-pwd-eye-icon{width: 18px;height: 14px;}
+    .Prp-PasswordReset-Link-Img {
+    max-width: 60px;
+    width: 100%;
+  }
+
+  .Prp-Reset-Header-Title {
+    font-size: 32px;
+    color: #132A56;
+  }
+
+  .Prp-Reset-Header-desc {
+    font-size: 14px;
+  }
+
+  .Prp-Reset-mail-Notify {
+    font-size: 16px;
+  }
+
+  .Prp-PasswordReset-Link-Form {
+    gap: 15px;
+    max-width: 500px;
+  }
+
+  .Prp-Reset-Illustration-img {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+    .PRP-Login-Page-Container { gap: 40px; padding: 20px; justify-content: space-around ; }
+    .Prp-Login-Page-Left { width: 500px; }
+    .Prp-Login-Page-Left-container{max-width: 500px};
+    
+    /* Fonts */
+    .Prp-Product-Title { font-size: 16px; }
+    .Prp-Product-SubTitle { font-size: 10px; }
+    .Prp-Product-HeroSec-welcome-Text { font-size: 20px; }
+    .Prp-Product-HeroSec-Text { font-size: 26px; line-height: 28px; }
+    .Prp-Product-HeroSec-sub-heading { font-size: 10px; line-height: 13px; }
+    .Prp-Product-cards-title { font-size: 8px; }
+    .Prp-Product-Info-text { font-size: 10px; }
+    .Prp-Login-Page-Form-Text { font-size: 24px; }
+    .Prp-Login-Page-Message { font-size: 13px; }
+    .Prp-Login-Input-Container label { font-size: 12px; }
+    .Prp-Login-Input { font-size: 14px; }
+    .Prp-Login-forgot-Text, .Prp-Login-Account-Creation-Link, .Prp-Login-NavLinks a { font-size: 11px; }
+
+    /* Paddings & Icons */
+    .Prp-ProductLogo-img-container { padding: 8px; border-radius: 10px; }
+    .Prp-ProductLogo-img { max-width: 16px; }
+    .Prp-Product-cards-image-container { width: 44px; height: 44px; }
+    .Prp-Product-cards-icon { width: 15px; }
+    .Prp-Product-Info-Container { padding: 8px 0; }
+    .Prp-Product-Info-Container img { max-width: 18px; }
+    .Prp-Login-Input-Wrapper { padding: 10px 12px; gap: 10px; border-radius: 6px; }
+    .Prp-Login-Input-icon { width: 15px; height: 12px; }
+    .Prp-Login-Button-Icon { width: 12px; }
+    .Prp-Login-Google-icon { max-width: 16px; }
+    .Prp-Login-Illustration-img { max-width: 450px; }
+    .Prp-Login-Page-Right { width: 420px; }
+    .Prp-Login-Page-form { padding: 10px 15px; }
+    .Prp-Product-cards-container{max-width: 150px;}
+}
+
+
+@media screen and (max-width: 1023px) {
+    .PRP-Login-Page-Container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        min-height: auto;
+        padding: 30px 15px;
+    }
+    .Prp-Login-otp-input{width: 30px; height: 40px;}
+    .Prp-Login-Page-Left {
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .Prp-Product-Header-Container, .Prp-Product-HeroSec-Container, .Prp-Product-cards-wrapper {
+        justify-content: center;
+        align-items: center;
+    }
+    .Prp-Login-Illustration-img { display: none; } 
+    .Prp-Login-Page-Right { width: 100%; max-width: 480px; }
+
+    /* Fonts */
+    .Prp-Product-HeroSec-Text { font-size: 26px; line-height: 30px; }
+    .Prp-Login-Page-Form-Text { font-size: 22px; }
+    .Prp-Login-Input-Wrapper { padding: 11px 14px; }
+    .Prp-Login-Page-Left-container{height: 100%; max-width: 500px;}
+    .Prp-Product-cards-container{width: 120px;}
+}
+
+
+@media screen and (max-width: 480px) {
+    .PRP-Login-Page-Container { padding: 20px 10px; gap: 20px; }
+    .Prp-Product-cards-wrapper { grid-template-columns: 1fr; gap: 12px; }
+    
+    /* Fonts */
+    .Prp-Product-HeroSec-welcome-Text { font-size: 16px; }
+    .Prp-Product-HeroSec-Text { font-size: 22px; line-height: 26px; }
+    .Prp-Product-HeroSec-sub-heading { font-size: 12px; line-height: 16px; }
+    .Prp-Product-cards-title { font-size: 16px; }
+    .Prp-Login-Page-Form-Text { font-size: 20px; }
+    .Prp-Login-Page-Message { font-size: 12px; }
+    .Prp-Login-Input { font-size: 13px; }
+    
+    /* Paddings & Icons */
+    .Prp-Login-Page-form { padding: 5px 5px; }
+    .Prp-Login-Input-Wrapper { padding: 9px 12px; gap: 8px; }
+    .Prp-Login-Input-icon { width: 14px; height: 11px; }
+    .Prp-Login-Google-Button { max-width: 100%; }
+    .Prp-Login-Page-Left-container{height: 100%;}
+}

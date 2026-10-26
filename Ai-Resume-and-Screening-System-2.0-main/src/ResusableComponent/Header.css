@@ -1,0 +1,39 @@
+.Prp-Landing-Header{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #566B94 10%, #FFFFFF 93%);
+    padding: 25px;
+    align-items: center;
+    border-bottom: 1px solid #555;
+}
+.Prp-Landing-Button{
+    display: flex;
+    gap: 15px;
+}
+
+.Prp-Register-Button{
+    padding: 10px 15px;
+    border-radius: 7px;
+    border: 1px solid #777;
+    outline: none;
+    background-color: #566B94;
+    color: #FFFFFF;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.Prp-Landingpage-Login-Button{
+    padding: 10px 15px ;
+    border-radius: 6px;
+    border: 1px solid #777;
+    outline: none;
+    background-color: #566B94;
+    color: #FFFFFF;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.Prp-Header-Logo{
+    font-size: 24px;
+    font-weight: 800;
+    color: #004;
+}
