@@ -40,7 +40,7 @@ const router = createBrowserRouter([
   
 ],
   {
-    basename: "/prp",
+    basename: "/Ai-Resume-Builder",
   }
 )
 
