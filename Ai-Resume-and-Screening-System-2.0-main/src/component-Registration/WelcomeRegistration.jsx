@@ -6,9 +6,7 @@ import UnifiedPlatformIcon from '../assets/RegistrationAssets/UnifiedPlatformIco
 import DropdownArrow from '../assets/RegistrationAssets/DropdownArrow.png';
 import CandidateRegistration from './CandidateRegistration';
 import Logo from "../assets/RegistrationAssets/AIR_Logo.png";
-import PlacementOfficerRegistration from './PlacementOfficerRegistration';
 import RecruiterRegistration from './RecruiterRegistration';
-import TrainingCoRegistration from './TrainingCoRegistration';
 
 const WelcomeRegistration = () => {
     const { role } = useParams();
@@ -106,12 +104,8 @@ const WelcomeRegistration = () => {
             {selectedRole === 'Recruiter' && (
                 <RecruiterRegistration />
             )}
-            {selectedRole === 'Placement Officer' && (
-                <PlacementOfficerRegistration />
-            )}
-            {selectedRole === 'Training Coordinator' && (
-                <TrainingCoRegistration />
-            )}
+            
+            
         </div>
     );
 };
