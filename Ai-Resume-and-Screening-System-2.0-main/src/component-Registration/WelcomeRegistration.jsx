@@ -12,7 +12,7 @@ const WelcomeRegistration = () => {
     const { role } = useParams();
     const navigate = useNavigate();
     const [selectedRole, setSelectedRole] = useState('');
-    const Roles = ['Student', 'Recruiter', 'Placement Officer', 'Training Coordinator'];
+    const Roles = ['Student', 'Recruiter'];
 
     useEffect(() => {
         if (role) {
