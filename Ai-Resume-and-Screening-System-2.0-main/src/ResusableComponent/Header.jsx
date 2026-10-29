@@ -8,7 +8,7 @@ const Header = () => {
     <div className='AIR-Landing-Header'>
         <h4 className='AIR-Header-Logo'>Placement and Recruitement Platform</h4>
         <div className='AIR-Landing-Button'>
-            <button className='AIR-Register-Button'>Register</button>
+            <button onClick={()=>navigate('/Registration')} className='AIR-Header-Register-Button'>Register</button>
             <button onClick={()=>navigate('/Login')} className='AIR-Landingpage-Login-Button'>Login</button>
         </div>
     </div>
