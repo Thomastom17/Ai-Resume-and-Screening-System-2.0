@@ -49,7 +49,7 @@ const router = createBrowserRouter([
   
 ],
   {
-    basename: "/Ai-Resume-Builder",
+    basename: "/Ai-Resume-and-Screening-System-2.0",
   }
 )
 
