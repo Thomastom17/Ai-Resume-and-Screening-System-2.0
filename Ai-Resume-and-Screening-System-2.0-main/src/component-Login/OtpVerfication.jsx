@@ -131,32 +131,32 @@ const handleSubmit = (e) => {
   };
 
     return (
-        <div className="PRP-Login-Page-Container">
-            <div className='Prp-Login-Page-Left-container'>
-                <div className="Prp-Login-Page-Left">
-                    <div className='Prp-Product-HeroSec-Container'>
-                        <h4 className='Prp-Product-HeroSec-welcome-Text'>AI Education & Workforce <br />Development Platform</h4>
-                        <h3 className='Prp-Product-HeroSec-Text'>Verify Identity & Enter Security Code</h3>
-                        <p className='Prp-Product-HeroSec-sub-heading'> 
+        <div className="AIR-Login-Page-Container">
+            <div className='AIR-Login-Page-Left-container'>
+                <div className="AIR-Login-Page-Left">
+                    <div className='AIR-Product-HeroSec-Container'>
+                        <h4 className='AIR-Product-HeroSec-welcome-Text'>AI Education & Workforce <br />Development Platform</h4>
+                        <h3 className='AIR-Product-HeroSec-Text'>Verify Identity & Enter Security Code</h3>
+                        <p className='AIR-Product-HeroSec-sub-heading'> 
                             6-digit one-time password has been transmitted to your registered <br />
                             institutional credentials.
                         </p>
                     </div>
 
-                    <div className='Prp-Login-Illustration-container'>
-                        <img className='Prp-Login-Illustration-img' src={MainIllustration} alt="" />
+                    <div className='AIR-Login-Illustration-container'>
+                        <img className='AIR-Login-Illustration-img' src={MainIllustration} alt="" />
                     </div>
                 </div>
-                <div className='Prp-Product-Info-Container'>
-                    <div className="prp-Product-Info-Image-container">
+                <div className='AIR-Product-Info-Container'>
+                    <div className="AIR-Product-Info-Image-container">
                         <img src={ShieldIcon} alt="" />
                     </div>
                     <div>
-                        <p className="Prp-ForgotPassword-quoteMain">
+                        <p className="AIR-ForgotPassword-quoteMain">
                             "A unified platform that simplifies training, placements, and
                             recruitment management."
                         </p>
-                        <p className="Prp-ForgotPassword-quoteAuthor">
+                        <p className="AIR-ForgotPassword-quoteAuthor">
                             Dr. Elena Vance — Dean of Experiential Education, Northeastern
                             Consortium
                         </p>
@@ -164,11 +164,11 @@ const handleSubmit = (e) => {
                 </div>
             </div>
             
-            <div className='Prp-Login-Page-Right'>
-                <form className='Prp-Login-Page-form' onSubmit={handleSubmit}>
-                    <div className='Prp-Login-Page-Form-Header'>
-                        <p className='Prp-Login-Page-Form-Text'>Enter Verification Codes</p>
-                        <p className='Prp-Login-Page-Message'>
+            <div className='AIR-Login-Page-Right'>
+                <form className='AIR-Login-Page-form' onSubmit={handleSubmit}>
+                    <div className='AIR-Login-Page-Form-Header'>
+                        <p className='AIR-Login-Page-Form-Text'>Enter Verification Codes</p>
+                        <p className='AIR-Login-Page-Message'>
                             We've sent a 6-digit code to {destinationLabel} <span style={{ fontWeight: "600", color: "#333" }}>{maskedContact}</span>. <br />
                             {isExpired ? (
                                 <span style={{ color: "red", fontWeight: "bold" }}>OTP Expired!</span>
@@ -178,12 +178,12 @@ const handleSubmit = (e) => {
                         </p>
                     </div>
 
-                    <div className="Prp-Login-otp-inputs">
+                    <div className="AIR-Login-otp-inputs">
                         {otp.map((data, index) => (
                             <input
                                 key={index}
                                 ref={(el) => (inputRefs.current[index] = el)}
-                                className={error.invalidOtp ? "Prp-Login-otp-input-Error" : "Prp-Login-otp-input"}
+                                className={error.invalidOtp ? "AIR-Login-otp-input-Error" : "AIR-Login-otp-input"}
                                 type="text"
                                 maxLength="1"
                                 value={data}
@@ -195,9 +195,9 @@ const handleSubmit = (e) => {
                     </div>
                     {error.invalidOtp && (<span className="error-msg">{error.invalidOtp}</span>)}
 
-                    <button className="Prp-Login-Button" type="submit" disabled={isExpired}>
+                    <button className="AIR-Login-Button" type="submit" disabled={isExpired}>
                         Verify and Continue
-                        <img className="Prp-ForgotPassword-arrowIcon" src={ArrowRight} alt="" />
+                        <img className="AIR-ForgotPassword-arrowIcon" src={ArrowRight} alt="" />
                     </button>
                  
                     <div style={{ textAlign: "center", marginTop: "15px", fontSize: "14px" }}>

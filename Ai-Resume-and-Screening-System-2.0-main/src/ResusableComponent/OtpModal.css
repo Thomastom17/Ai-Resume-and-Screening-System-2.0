@@ -1,0 +1,198 @@
+/* Base Styles & Container */
+.AIR-Otp-Modal-Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 16px;
+}
+
+.AIR-Otp-Modal-Box {
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.AIR-Otp-Modal-Title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.AIR-Otp-Modal-Desc {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.AIR-Otp-Modal-Inputs {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.AIR-Otp-Modal-Input {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.AIR-Otp-Modal-Input:focus {
+    border-color: #176789;
+    box-shadow: 0 0 0 3px rgba(23, 103, 137, 0.15);
+}
+
+.AIR-Login-otp-input-Error {
+    border-color: #ef4444 !important;
+}
+
+.AIR-Otp-Modal-Error {
+    font-size: 13px;
+    color: #ef4444;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.AIR-Otp-Modal-Timer {
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.AIR-Otp-Modal-Resend {
+    cursor: pointer;
+    color: #176789;
+    font-weight: 500;
+}
+
+.AIR-Otp-Modal-Buttons {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+}
+
+.AIR-Otp-Modal-Btn {
+    flex: 1;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.AIR-Otp-Modal-Verify-Btn {
+    background-color: #132A56;
+    color: #ffffff;
+}
+
+.AIR-Login-Button:hover {
+    background-color: #12526e;
+}
+
+.AIR-Otp-Modal-Cancel-Btn {
+    background-color: #e5e7eb;
+    color: #374151;
+}
+
+.AIR-Otp-Modal-Cancel-Btn:hover {
+    background-color: #d1d5db;
+}
+
+/* --- Responsive Media Queries (1599px down to 460px) --- */
+
+@media screen and (max-width: 1599px) {
+    .AIR-Otp-Modal-Box {
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .AIR-Otp-Modal-Box {
+        max-width: 420px;
+        padding: 28px;
+    }
+    .AIR-Otp-Modal-Input {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .AIR-Otp-Modal-Box {
+        max-width: 380px;
+        padding: 24px;
+    }
+    .AIR-Otp-Modal-Inputs {
+        gap: 8px;
+    }
+    .AIR-Otp-Modal-Input {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .AIR-Otp-Modal-Overlay {
+        padding: 12px;
+    }
+    .AIR-Otp-Modal-Box {
+        max-width: 100%;
+        padding: 20px 16px;
+        border-radius: 10px;
+    }
+    .AIR-Otp-Modal-Title {
+        font-size: 18px;
+    }
+    .AIR-Otp-Modal-Desc {
+        font-size: 13px;
+        margin-bottom: 18px;
+    }
+    .AIR-Otp-Modal-Inputs {
+        gap: 6px;
+        margin-bottom: 12px;
+    }
+    .AIR-Otp-Modal-Input {
+        width: 32px;
+        height: 32px;
+        font-size: 15px;
+        border-radius: 6px;
+    }
+    .AIR-Otp-Modal-Buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .AIR-Otp-Modal-Btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+}

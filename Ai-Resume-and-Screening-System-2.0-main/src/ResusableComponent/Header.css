@@ -1,4 +1,4 @@
-.Prp-Landing-Header{
+.AIR-Landing-Header{
     display: flex;
     justify-content: space-between;
     background: linear-gradient(to right, #566B94 10%, #FFFFFF 93%);
@@ -6,12 +6,12 @@
     align-items: center;
     border-bottom: 1px solid #555;
 }
-.Prp-Landing-Button{
+.AIR-Landing-Button{
     display: flex;
     gap: 15px;
 }
 
-.Prp-Register-Button{
+.AIR-Register-Button{
     padding: 10px 15px;
     border-radius: 7px;
     border: 1px solid #777;
@@ -22,7 +22,7 @@
     letter-spacing: 1px;
 }
 
-.Prp-Landingpage-Login-Button{
+.AIR-Landingpage-Login-Button{
     padding: 10px 15px ;
     border-radius: 6px;
     border: 1px solid #777;
@@ -32,7 +32,7 @@
     font-weight: 600;
     letter-spacing: 1px;
 }
-.Prp-Header-Logo{
+.AIR-Header-Logo{
     font-size: 24px;
     font-weight: 800;
     color: #004;

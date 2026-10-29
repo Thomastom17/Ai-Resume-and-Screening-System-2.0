@@ -1,0 +1,691 @@
+.AIR-Registration-Page-Container{
+    padding: 10px 25px;
+    background: linear-gradient(to left, #ffffff 20% , #566B94 98%  );
+    min-height: 100%;
+    max-height: 1080px;
+    display: flex;
+    gap: 100px;
+    font-family:'Open Sans', sans-serif;
+    justify-content: center;
+}
+.AIR-registration-Page-Right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px
+}
+.AIR-Registration-Field textarea{
+    padding: 5px 15px;
+    font-family:'Open Sans', sans-serif;
+    border-radius: 8px;
+    border: 1px solid #9AA8C0;;
+
+}
+.AIR-Register-Button{
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    color: #ffffff;
+    align-items: center;
+    gap: 7px;
+    justify-content: center;
+    background-color: #132A56;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.AIR-WelcomeRegistration-Form-Header {
+    display: flex;
+    flex-direction: column;
+}
+.AIR-WelcomeRegistration-Form-Header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #132A56;
+}
+.AIR-WelcomeRegistration-Form-Header p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #132A56;
+}
+.AIR-WelcomeRegistration-Role-Group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+.AIR-WelcomeRegistration-Role-Group label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #132A56;
+}
+.AIR-WelcomeRegistration-Role-Group label span {
+    color: #F44336;
+}
+.AIR-WelcomeRegistration-Select-Wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.AIR-WelcomeRegistration-Select-Wrapper select {
+    appearance: none;
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #9AA8C0;
+    border-radius: 5px;
+    outline: none;
+    background-color: #FFFFFF;
+    color: #132A56;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.AIR-WelcomeRegistration-Select-Wrapper select:focus {
+    border-color: #132A56;
+    box-shadow: 0 0 0 3px #132A5620;
+}
+.AIR-WelcomeRegistration-Select-Arrow {
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%);
+    object-fit: contain;
+    pointer-events: none;
+
+}
+.AIR-Registration-Field {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: 5px;
+}
+
+.AIR-Registration-Field label {
+  margin-bottom: 3px;
+  color: #405477;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.AIR-Registration-Field input {
+  display: block;
+  width: 100%;
+  padding: 10px 8px;
+  border: 1px solid #9AA8C0;
+  border-radius: 5px;
+  outline: none;
+  background: #fff;
+  color: #132A56;
+  font-family:'Open Sans', sans-serif;
+  font-size: 16px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.AIR-Registration-Field  input::placeholder {
+  color: #9ba4b2;
+}
+
+.AIR-Registration-Field select {
+  cursor: pointer;
+}
+
+.AIR-Registration-Field  input:focus{
+  border-color: #536b96;
+  box-shadow: 0 0 0 2px rgba(83, 107, 150, 0.1);
+}
+
+.AIR-Reg-Terms-Text{
+    color: #132A56;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 12px;
+}
+.AIR-Registration-Button-Container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.AIR-Registration-Header-Img-Cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background: #132A56;
+    border-radius: 12px;
+}
+.AIR-Registration-Header-Img-Cont img{
+    width: 22px;
+}
+.AIR-Registration-Title-Wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.AIR-Registration-Header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #FFFFFF;
+    
+}
+.AIR-Product-Header-Title-Text{
+    font-size: 20px;
+    font-weight: 700;
+}
+.AIR-Product-Header-Slogan{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+.AIR-Slogan-Seperator-Dot{
+    min-height: 4px;
+    min-width: 4px;
+    height: 2px;
+    width: 2px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin-top: 3px;
+    margin-left:  5px;
+    margin-right:  5px;
+}
+.AIR-Product-Registration-Slogan{
+    font-size: 30px;
+    color: #132A56;
+}
+.AIR-Registration-Left-Footer-Img{
+    width: 30px;
+}
+.AIR-Registration-Left-Footer-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: #333334;
+    
+}
+.AIR-Registration-Hor-Seperator{
+    min-height: 35px;
+    width: 1px;
+    background-color: #000000;
+}
+.AIR-Registration-Left-Footer-Secondary{
+    color: #132A56;
+}
+.AIR-Registration-Verify-Btn{
+    margin-right: 10px;
+    background-color: #132A56;
+    color: #FFFFFF;
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: none;
+    font-weight: 700;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.AIR-Reg-Back-Btn{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    width: fit-content;
+    background-color: #132A56;
+    padding: 7px 10px;
+    color: #FFFFFF;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.AIR-Reg-Back-Btn p{
+    font-size: 12px;
+}
+@media screen and (max-width: 1599px){
+    .AIR-WelcomeRegistration-Select-Wrapper select {
+        padding: 10px 15px;
+    }
+    .AIR-Registration-Field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.AIR-Registration-Field label {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.AIR-Registration-Field input {
+  padding: 10px 15px;
+  font-size: 13px;
+}
+
+.AIR-Registration-Field  input::placeholder {
+  color: #9ba4b2;
+}
+
+.AIR-Registration-Field select {
+  cursor: pointer;
+}
+.AIR-Product-Registration-Slogan{
+    font-size: 24px;
+    color: #132A56;
+}
+
+.AIR-Registration-Left-Footer-text{
+    font-size: 12px;
+    
+}
+.AIR-Registration-Hor-Seperator{
+    min-height: 25px;
+}
+.AIR-Registration-Header-Img-Cont{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+.AIR-Registration-Header-Img-Cont img{
+    width: 20px;
+}
+
+.AIR-Registration-Header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #FFFFFF;
+    
+}
+.AIR-Product-Header-Title-Text{
+    font-size: 18px;
+    font-weight: 700;
+}
+.AIR-Product-Header-Slogan{
+    font-size: 12px;
+    font-weight: 600;
+}
+.AIR-Slogan-Seperator-Dot{
+    min-height: 4px;
+    min-width: 4px;
+    margin-top: 3px;
+    margin-left:  3px;
+    margin-right:  3px;
+}
+
+}
+@media screen and (max-width: 1365px) {
+    .AIR-WelcomeRegistration-Select-Wrapper select {
+        padding: 8px 12px;
+    }
+    
+    .AIR-Registration-Field {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .AIR-Registration-Field label {
+        font-size: 11px;
+        font-weight: 500;
+    }
+
+    .AIR-Registration-Field input {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .AIR-Registration-Field input::placeholder {
+        color: #9ba4b2;
+    }
+
+    .AIR-Registration-Field select {
+        cursor: pointer;
+    }
+
+    .AIR-Product-Registration-Slogan {
+        font-size: 20px;
+        color: #132A56;
+    }
+
+    .AIR-Registration-Left-Footer-text {
+        font-size: 11px;
+    }
+
+    .AIR-Registration-Hor-Seperator {
+        min-height: 20px;
+    }
+
+    .AIR-Registration-Header-Img-Cont {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+    }
+
+    .AIR-Registration-Header-Img-Cont img {
+        width: 18px;
+    }
+
+    .AIR-Registration-Header {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #FFFFFF;
+    }
+
+    .AIR-Product-Header-Title-Text {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .AIR-Product-Header-Slogan {
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+    .AIR-Slogan-Seperator-Dot {
+        min-height: 3px;
+        min-width: 3px;
+        margin-top: 2px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+}
+
+/* Laptops & Tablets (1024px and below) */
+@media screen and (max-width: 1024px) {
+    .AIR-WelcomeRegistration-Select-Wrapper select {
+        padding: 7px 10px;
+    }
+    
+    .AIR-Registration-Field {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .AIR-Registration-Field label {
+        font-size: 11px;
+        font-weight: 500;
+    }
+
+    .AIR-Registration-Field input {
+        padding: 7px 10px;
+        font-size: 11px;
+    }
+
+    .AIR-Registration-Field input::placeholder {
+        color: #9ba4b2;
+    }
+
+    .AIR-Registration-Field select {
+        cursor: pointer;
+    }
+
+    .AIR-Product-Registration-Slogan {
+        font-size: 18px;
+        color: #132A56;
+    }
+
+    .AIR-Registration-Left-Footer-text {
+        font-size: 10px;
+    }
+
+    .AIR-Registration-Hor-Seperator {
+        min-height: 16px;
+    }
+
+    .AIR-Registration-Header-Img-Cont {
+        width: 32px;
+        height: 32px;
+        border-radius: 6px;
+    }
+
+    .AIR-Registration-Header-Img-Cont img {
+        width: 16px;
+    }
+
+    .AIR-Registration-Header {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: #FFFFFF;
+    }
+
+    .AIR-Product-Header-Title-Text {
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .AIR-Product-Header-Slogan {
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    .AIR-Slogan-Seperator-Dot {
+        min-height: 3px;
+        min-width: 3px;
+        margin-top: 2px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .AIR-WelcomeRegistration-Select-Wrapper select {
+        padding: 6px 8px;
+    }
+
+    .AIR-Registration-Field label {
+        font-size: 10px;
+    }
+
+    .AIR-Registration-Field input {
+        padding: 6px 8px;
+        font-size: 10px;
+    }
+
+    .AIR-Product-Registration-Slogan {
+        font-size: 16px;
+    }
+
+    .AIR-Registration-Left-Footer-text {
+        font-size: 9px;
+    }
+
+    .AIR-Registration-Hor-Seperator {
+        min-height: 12px;
+    }
+
+    .AIR-Registration-Header-Img-Cont {
+        width: 28px;
+        height: 28px;
+        border-radius: 5px;
+    }
+
+    .AIR-Registration-Header-Img-Cont img {
+        width: 14px;
+    }
+
+    .AIR-Product-Header-Title-Text {
+        font-size: 14px;
+    }
+
+    .AIR-Product-Header-Slogan {
+        font-size: 9px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .AIR-WelcomeRegistration-Select-Wrapper select {
+        padding: 5px 8px;
+    }
+    .AIR-WelcomeRegistration-Role-Group{
+        width: 300px;
+    }
+    .AIR-Registration-Field{
+        width: 300px;
+    }
+    .AIR-WelcomeRegistration-Form-Header h2{
+        font-size: 22px;
+    }
+    .AIR-WelcomeRegistration-Form-Header p{
+        font-size: 12px;
+    }
+
+    .AIR-Registration-Field label {
+        font-size: 9px;
+    }
+
+    .AIR-Registration-Field input {
+        padding: 5px 8px;
+        font-size: 9px;
+    }
+
+    .AIR-Product-Registration-Slogan {
+        font-size: 14px;
+    }
+
+    .AIR-Registration-Header-Img-Cont {
+        width: 24px;
+        height: 24px;
+    }
+
+    .AIR-Registration-Header-Img-Cont img {
+        width: 12px;
+    }
+
+    .AIR-Product-Header-Title-Text {
+        font-size: 13px;
+    }
+
+    .AIR-Product-Header-Slogan {
+        font-size: 8px;
+    }
+}
+/* @media screen and (max-width: 1365px){
+
+}
+@media (max-width: 1200px) {
+    .AIR-WelcomeRegistration-Left {
+        flex-basis: 45%;
+    }
+    .AIR-WelcomeRegistration-Content {
+        padding: 0 28px;
+    }
+    .AIR-WelcomeRegistration-Intro h1 {
+        font-size: 29px;
+    }
+    .AIR-WelcomeRegistration-Illustration {
+        height: 270px;
+    }
+    .AIR-WelcomeRegistration-Right {
+        padding: 160px 30px 50px;
+    }
+    .AIR-WelcomeRegistration-Form-Header h2 {
+        font-size: 25px;
+    }
+}
+@media (max-width: 900px) {
+    .AIR-WelcomeRegistration-Container {
+        flex-direction: column;
+    }
+    .AIR-WelcomeRegistration-Left {
+        flex: none;
+        width: 100%;
+        min-height: auto;
+        padding: 40px 0 35px;
+    }
+    .AIR-WelcomeRegistration-Content {
+        max-width: 650px;
+        padding: 0 28px;
+    }
+    .AIR-WelcomeRegistration-Intro h1 {
+        max-width: 550px;
+        font-size: 30px;
+    }
+    .AIR-WelcomeRegistration-Illustration {
+        height: 300px;
+        margin: 20px 0;
+    }
+    .AIR-WelcomeRegistration-Features,
+    .AIR-WelcomeRegistration-Testimonial {
+        max-width: 100%;
+    }
+    .AIR-WelcomeRegistration-Right {
+        flex: none;
+        width: 100%;
+        min-height: 350px;
+        padding: 55px 28px 70px;
+        background-color: #FFFFFF;
+    }
+    .AIR-WelcomeRegistration-Form {
+        max-width: 650px;
+    }
+}
+@media (max-width: 480px) {
+    .AIR-WelcomeRegistration-Left {
+        padding: 30px 0;
+    }
+    .AIR-WelcomeRegistration-Content {
+        padding: 0 20px;
+    }
+    .AIR-WelcomeRegistration-Intro {
+        gap: 14px;
+    }
+    .AIR-WelcomeRegistration-Intro h1 {
+        font-size: 25px;
+        line-height: 1.35;
+    }
+    .AIR-WelcomeRegistration-Intro p {
+        font-size: 12px;
+        line-height: 21px;
+    }
+    .AIR-WelcomeRegistration-Illustration {
+        height: 230px;
+        margin: 16px 0 20px;
+    }
+    .AIR-WelcomeRegistration-Features {
+        gap: 14px;
+    }
+    .AIR-WelcomeRegistration-Feature-Item {
+        gap: 10px;
+        padding: 12px;
+        border-radius: 10px;
+    }
+    .AIR-WelcomeRegistration-Feature-Text h3 {
+        font-size: 12px;
+    }
+    .AIR-WelcomeRegistration-Feature-Text p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .AIR-WelcomeRegistration-Testimonial {
+        margin-top: 28px;
+        padding-top: 20px;
+    }
+    .AIR-WelcomeRegistration-Testimonial-Author p {
+        font-size: 9px;
+    }
+    .AIR-WelcomeRegistration-Right {
+        padding: 40px 20px 55px;
+    }
+    .AIR-WelcomeRegistration-Form {
+        gap: 20px;
+    }
+    .AIR-WelcomeRegistration-Form-Header h2 {
+        font-size: 23px;
+    }
+    .AIR-WelcomeRegistration-Form-Header p {
+        font-size: 11px;
+    }
+    .AIR-WelcomeRegistration-Select-Wrapper select {
+        height: 46px;
+        font-size: 12px;
+    }
+} */

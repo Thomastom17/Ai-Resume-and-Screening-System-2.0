@@ -7,6 +7,7 @@ import PasswordResetLink from "./component-Login/PasswordResetLink";
 import ResetSuccessful from "./component-Login/ResetSuccessful";
 import ResetPasswordPage from "./component-Login/ResetPassword";
 import OtpVerfication from "./component-Login/OtpVerfication";
+import WelcomeRegistration from "./component-Registration/WelcomeRegistration";
 
 
 
@@ -36,6 +37,14 @@ const router = createBrowserRouter([
     {
     path:"/ResetPassword/Successful",
     element:<ResetSuccessful/>
+  },
+  {
+   path:'/Registration',
+   element:<WelcomeRegistration/>
+  },
+  {
+   path:"/Registration/:role",
+   element:<WelcomeRegistration />
   }
   
 ],

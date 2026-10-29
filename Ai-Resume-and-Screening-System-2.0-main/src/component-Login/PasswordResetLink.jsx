@@ -14,7 +14,7 @@ const resendWaitSeconds = 30;
 
 const PasswordResetLink = () => {
   const navigate = useNavigate();
-  const email = "priya1@prp.com";
+  const email = "priya1@AIR.com";
   const [secondsLeft, setSecondsLeft] = useState(resendWaitSeconds);
 
   useEffect(() => {
@@ -39,61 +39,61 @@ const PasswordResetLink = () => {
   };
 
   return (
-    <main className="PRP-Login-Page-Container">
-      <div className='Prp-Login-Page-Left-container'>
-      <div className='Prp-Login-Page-Left'>
-        <div className='Prp-Product-Header-Container'>
-          <div className='Prp-ProductLogo-img-container'><img className='Prp-ProductLogo-img' src={ProductLogo} alt="ProductLogo" /></div>
+    <main className="AIR-Login-Page-Container">
+      <div className='AIR-Login-Page-Left-container'>
+      <div className='AIR-Login-Page-Left'>
+        <div className='AIR-Product-Header-Container'>
+          <div className='AIR-ProductLogo-img-container'><img className='AIR-ProductLogo-img' src={ProductLogo} alt="ProductLogo" /></div>
           <div>
-            <h4 className='Prp-Product-Title'>Placement & Recruitment Platform</h4>
-            <p className='Prp-Product-SubTitle'>Connect <span className='Prp-Seperator-Dot-white'></span> Discover <span className='Prp-Seperator-Dot-white'></span> Succeed</p>
+            <h4 className='AIR-Product-Title'>Placement & Recruitment Platform</h4>
+            <p className='AIR-Product-SubTitle'>Connect <span className='AIR-Seperator-Dot-white'></span> Discover <span className='AIR-Seperator-Dot-white'></span> Succeed</p>
           </div>
         </div>
-        <div className='Prp-Product-HeroSec-Container'>
-          <h3 className='Prp-Product-HeroSec-Text'>Check Your Inbox</h3>
-          <p className='Prp-Product-HeroSec-sub-heading'>We’ve sent a password reset link to your registered email address. <br />
+        <div className='AIR-Product-HeroSec-Container'>
+          <h3 className='AIR-Product-HeroSec-Text'>Check Your Inbox</h3>
+          <p className='AIR-Product-HeroSec-sub-heading'>We’ve sent a password reset link to your registered email address. <br />
           Follow the link to securely create a new password.</p>
         </div>
 
-        {/* <div className='Prp-Login-Illustration-container' > */}
-          <img className='Prp-Login-Illustration-img' src={ResearchPaper} alt="" />
+        {/* <div className='AIR-Login-Illustration-container' > */}
+          <img className='AIR-Login-Illustration-img' src={ResearchPaper} alt="" />
         {/* </div> */}
 
         </div>
-        <div className='Prp-Product-Info-Container'>
+        <div className='AIR-Product-Info-Container'>
           <img src={UnifiedPlatform} alt="" />
-          <p className='Prp-Product-Info-text'>Connecting students with the right opportunities to build successful careers.</p>
+          <p className='AIR-Product-Info-text'>Connecting students with the right opportunities to build successful careers.</p>
         </div>
       </div>
 
-      <div className="Prp-Login-Page-Right">
-        <div className="Prp-PasswordReset-Link-Form">
-          <img className="Prp-PasswordReset-Link-Img" src={ResetLink} alt="" />
-          <div className="Prp-Reset-Header-container">
-            <h4 className="Prp-Reset-Header-Title">Reset Link Sent !</h4>
-            <p className="Prp-Reset-Header-desc">We’ve sent a password reset link to your email address.</p>
+      <div className="AIR-Login-Page-Right">
+        <div className="AIR-PasswordReset-Link-Form">
+          <img className="AIR-PasswordReset-Link-Img" src={ResetLink} alt="" />
+          <div className="AIR-Reset-Header-container">
+            <h4 className="AIR-Reset-Header-Title">Reset Link Sent !</h4>
+            <p className="AIR-Reset-Header-desc">We’ve sent a password reset link to your email address.</p>
           </div>
-          <div className="Prp-Reset-mail-wrapper">
+          <div className="AIR-Reset-mail-wrapper">
             <img src={MailIcon} alt="" />
-            <p className="Prp-Reset-mail-Notify">priya1@prp.com</p>
+            <p className="AIR-Reset-mail-Notify">priya1@AIR.com</p>
           </div>
-          <p className="Prp-Reset-Link-mail">Check your inbox for the reset link.</p>
+          <p className="AIR-Reset-Link-mail">Check your inbox for the reset link.</p>
 
-          <div onClick={handleBackToLogin} className='Prp-Login-Button'>
+          <div onClick={handleBackToLogin} className='AIR-Login-Button'>
             <p>Back to Login</p>
-            <img className='Prp-Login-Button-Icon' src={Arrow} alt="" />
+            <img className='AIR-Login-Button-Icon' src={Arrow} alt="" />
           </div>
 
-          <div className="Prp-ResetLink-Container">
-            <div className="Prp-resetLink-Seperator"></div>
-            <div onClick={handleResendLink} className="Prp-ResetLink-Wrapper">
-              <img className="Prp-ResetLink-Icon" src={ResendLink} alt="" />
-              <p className="Prp-ResetLink-text">Resend Reset Link</p>
+          <div className="AIR-ResetLink-Container">
+            <div className="AIR-resetLink-Seperator"></div>
+            <div onClick={handleResendLink} className="AIR-ResetLink-Wrapper">
+              <img className="AIR-ResetLink-Icon" src={ResendLink} alt="" />
+              <p className="AIR-ResetLink-text">Resend Reset Link</p>
             </div>
-            <div className="Prp-resetLink-Seperator"></div>
+            <div className="AIR-resetLink-Seperator"></div>
           </div>
           <p
-            className="Prp-Reset-timer"
+            className="AIR-Reset-timer"
             aria-live="polite"
           >
             {secondsLeft > 0

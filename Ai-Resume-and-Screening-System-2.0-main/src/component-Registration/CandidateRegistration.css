@@ -1,0 +1,204 @@
+.AIR-Registration-Field-Wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.AIR-Candidate-Password-Wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #9AA8C0;
+}
+.AIR-Registration-PasswordInput{
+   background: transparent !important;
+   border: none !important;
+   outline: none !important;
+   
+}
+.AIR-Candidate-Password-Toggle{
+    font-size: 12px;
+    color: #536b96;
+    padding-right: 15px;
+}
+
+.AIR-Registration-Checkbox{
+    width: 16px;
+    height: 16px;
+}
+
+.AIR-Candidate-Error {
+  display: block;
+  color: #d92d20;
+  font-size: 11px;
+}
+
+.AIR-Registration-Login-Text{
+    display: flex;
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+    color: #132A46;
+}
+
+.AIR-Registration-Login-Text a {
+  margin-left: 5px;
+  color: #17315b;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.AIR-Registration-Login-Text a:hover {
+  text-decoration: underline;
+}
+
+.AIR-Registration-Login-Text{
+  color: #132A46;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1365px) {
+    .AIR-Registration-Field-Wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .AIR-Candidate-Password-Wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #ffffff;
+        border-radius: 5px;
+        border: 1px solid #9AA8C0;
+    }
+
+    .AIR-Registration-PasswordInput {
+        background: transparent !important;
+        border: none !important;
+        outline: none !important;
+    }
+
+    .AIR-Candidate-Password-Toggle {
+        font-size: 11px;
+        color: #536b96;
+        padding-right: 12px;
+    }
+
+    .AIR-Registration-Checkbox {
+        width: 15px;
+        height: 15px;
+    }
+
+    .AIR-Candidate-Error {
+        display: block;
+        color: #d92d20;
+        font-size: 10px;
+    }
+
+    .AIR-Registration-Login-Text {
+        display: flex;
+        font-size: 13px;
+        text-align: center;
+        justify-content: center;
+        color: #132A46;
+    }
+
+    .AIR-Registration-Login-Text a {
+        margin-left: 5px;
+        color: #17315b;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .AIR-Registration-Login-Text a:hover {
+        text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .AIR-Registration-Field-Wrapper {
+        gap: 8px;
+    }
+
+    .AIR-Candidate-Password-Toggle {
+        font-size: 10px;
+        padding-right: 10px;
+    }
+
+    .AIR-Registration-Checkbox {
+        width: 14px;
+        height: 14px;
+    }
+
+    .AIR-Candidate-Error {
+        font-size: 10px;
+    }
+
+    .AIR-Registration-Login-Text {
+        font-size: 12px;
+    }
+
+    .AIR-Registration-Login-Text a {
+        margin-left: 4px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .AIR-Registration-Field-Wrapper {
+        grid-template-columns: 1fr; 
+        gap: 6px;
+    }
+
+    .AIR-Candidate-Password-Toggle {
+        font-size: 10px;
+        padding-right: 8px;
+    }
+
+    .AIR-Registration-Checkbox {
+        width: 13px;
+        height: 13px;
+    }
+
+    .AIR-Candidate-Error {
+        font-size: 9px;
+    }
+
+    .AIR-Registration-Login-Text {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .AIR-Registration-Field-Wrapper {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .AIR-Candidate-Password-Toggle {
+        font-size: 9px;
+        padding-right: 6px;
+    }
+
+    .AIR-Registration-Checkbox {
+        width: 12px;
+        height: 12px;
+    }
+
+    .AIR-Candidate-Error {
+        font-size: 9px;
+    }
+
+    .AIR-Registration-Login-Text {
+        font-size: 10px;
+    }
+
+    .AIR-Registration-Login-Text a {
+        margin-left: 3px;
+    }
+}
