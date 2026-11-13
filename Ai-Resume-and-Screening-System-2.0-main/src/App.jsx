@@ -1,4 +1,4 @@
-import { createBrowserRouter,RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import React from "react";
 import LandingPage from "./LandingPage";
 import ForgotPassword from "./component-Login/ForgotPassword";
@@ -9,54 +9,60 @@ import ResetPasswordPage from "./component-Login/ResetPassword";
 import OtpVerfication from "./component-Login/OtpVerfication";
 import WelcomeRegistration from "./component-Registration/WelcomeRegistration";
 
+//Candidate
+import Dashboard from "./component-candidate/Dashboard";
+import CandidateProfile from "./component-candidate/CandidateProfile";
 
-
-
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element:<LandingPage/>
-  },
-  {
-    path: "/Login",
-    element:<LoginPage/>
-  },
-  {
-    path: "/ForgotPassword?",
-    element:<ForgotPassword/>
-  },
-   {
-    path: "/OtpVerification",
-    element:<OtpVerfication/>
-  },
-  {
-    path:"/ResetPassword",
-    element:<ResetPasswordPage/>
-  },
+const router = createBrowserRouter(
+  [
     {
-    path:"/ResetPassword/Successful",
-    element:<ResetSuccessful/>
-  },
-  {
-   path:'/Registration',
-   element:<WelcomeRegistration/>
-  },
-  {
-   path:"/Registration/:role",
-   element:<WelcomeRegistration />
-  }
-  
-],
+      path: "/",
+      element: <LandingPage />,
+    },
+    {
+      path: "/Login",
+      element: <LoginPage />,
+    },
+    {
+      path: "/ForgotPassword?",
+      element: <ForgotPassword />,
+    },
+    {
+      path: "/OtpVerification",
+      element: <OtpVerfication />,
+    },
+    {
+      path: "/ResetPassword",
+      element: <ResetPasswordPage />,
+    },
+    {
+      path: "/ResetPassword/Successful",
+      element: <ResetSuccessful />,
+    },
+    {
+      path: "/Registration",
+      element: <WelcomeRegistration />,
+    },
+    {
+      path: "/Registration/:role",
+      element: <WelcomeRegistration />,
+    },
+    {
+      path: "/Candidate-Dashboard",
+      element: <Dashboard />,
+    },
+    {
+      path: "/Candidate-Profile",
+      element: <CandidateProfile />,
+    },
+  ],
   {
     basename: "/Ai-Resume-and-Screening-System-2.0",
-  }
-)
+  },
+);
 
-  const App=()=>{
-    return(
-    <RouterProvider router={router}/>
-    )
-  }
+const App = () => {
+  return <RouterProvider router={router} />;
+};
 
-  export default App;
+export default App;

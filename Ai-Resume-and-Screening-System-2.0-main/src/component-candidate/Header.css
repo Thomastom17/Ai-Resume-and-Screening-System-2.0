@@ -1,0 +1,804 @@
+/* HEADER CONTAINER */
+
+.Air-can-header-container {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.Air-can-top-header {
+  width: 100%;
+  min-height: 75px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+/* LEFT SECTION */
+
+.Air-can-header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  min-width: 0;
+}
+
+.Air-can-logo-img {
+  display: block;
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.Air-can-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  min-width: 0;
+}
+
+.Air-can-dashboard-title-top {
+  margin: 0;
+  color: #202124;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.Air-can-dashboard-subtitle {
+  margin: 0;
+  color: #777777;
+  font-size: 12px;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+/* MOBILE MENU BUTTON */
+
+.Air-can-mobile-toggle {
+  display: none;
+  width: 34px;
+  height: 34px;
+  padding: 6px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.Air-can-mobile-toggle span {
+  display: block;
+  width: 21px;
+  height: 2px;
+  background-color: #222222;
+  border-radius: 2px;
+}
+
+/* DESKTOP SEARCH */
+
+.Air-can-desktop-search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.Air-can-search-wrapper {
+  width: 100%;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 14px;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+}
+
+.Air-can-search-button {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.Air-can-search-icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.Air-can-search-wrapper input {
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  padding: 0;
+  outline: none;
+  border: none;
+  background: transparent;
+  color: #333333;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.Air-can-search-wrapper input::placeholder {
+  color: #888888;
+  opacity: 1;
+}
+
+.Air-can-search-wrapper input::-webkit-search-decoration,
+.Air-can-search-wrapper input::-webkit-search-cancel-button,
+.Air-can-search-wrapper input::-webkit-search-results-button,
+.Air-can-search-wrapper input::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+/* RIGHT SECTION */
+
+.Air-can-header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+  flex-shrink: 0;
+}
+
+.Air-can-header-icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background: transparent;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.Air-can-header-icon:hover,
+.Air-can-header-icon:focus,
+.Air-can-header-icon:active {
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+.Air-can-header-icon img {
+  display: block;
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.Air-can-mobile-search-trigger {
+  display: none;
+}
+
+/* PROFILE BUTTON */
+
+.Air-can-avatar-dropdown-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.Air-can-user-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background: transparent;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.Air-can-user-profile:hover,
+.Air-can-user-profile:focus,
+.Air-can-user-profile:active {
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+.Air-can-avatar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  flex-shrink: 0;
+}
+
+.Air-can-top-avatar {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.Air-can-user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.Air-can-user-name {
+  color: #222222;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.Air-can-user-role {
+  color: #777777;
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+/* DROPDOWN ARROW */
+
+.Air-can-dropdown-arrow {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-left: 2px;
+  object-fit: contain;
+  filter: brightness(0);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.Air-can-dropdown-arrow.open {
+  transform: rotate(180deg);
+}
+
+/* PROFILE DROPDOWN MENU */
+
+.Air-can-user-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  z-index: 2000;
+  width: 190px;
+  padding: 8px 0;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+}
+
+.Air-can-dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  text-align: left;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background: transparent;
+  color: #333333;
+  font-size: 13px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.Air-can-dropdown-item:hover {
+  background-color: #f5f5f5;
+}
+
+.Air-can-help-btn {
+  color: #333333;
+}
+
+.Air-can-logout-btn {
+  color: #d93025;
+}
+
+.Air-can-dropdown-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #eeeeee;
+}
+
+/* MOBILE SEARCH ROW */
+
+.Air-can-mobile-search-section {
+  display: none;
+  width: 100%;
+  padding: 0 16px 14px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.Air-can-mobile-search-section .Air-can-search-wrapper {
+  width: 100%;
+}
+
+/* MOBILE NAVIGATION */
+
+.Air-can-mobile-navigation {
+  display: none;
+  width: 100%;
+  padding: 10px 16px;
+  border-top: 1px solid #eeeeee;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.Air-can-mobile-navigation button {
+  display: block;
+  width: 100%;
+  padding: 12px 10px;
+  text-align: left;
+  color: #222222;
+  font-size: 14px;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* LAPTOP RESPONSIVENESS */
+
+@media screen and (max-width: 1024px) {
+  .Air-can-top-header {
+    padding: 0 18px;
+    gap: 16px;
+  }
+
+  .Air-can-header-right {
+    gap: 12px;
+  }
+
+  .Air-can-desktop-search {
+    max-width: 400px;
+  }
+}
+
+/* TABLET: 768px AND BELOW */
+
+@media screen and (max-width: 768px) {
+  .Air-can-top-header {
+    min-height: 70px;
+    padding: 0 16px;
+    gap: 12px;
+  }
+
+  .Air-can-mobile-toggle {
+    display: flex;
+  }
+
+  .Air-can-logo-img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .Air-can-header-left {
+    gap: 9px;
+  }
+
+  .Air-can-desktop-search {
+    display: none;
+  }
+
+  .Air-can-mobile-search-trigger {
+    display: flex;
+  }
+
+  .Air-can-mobile-search-section {
+    display: block;
+  }
+
+  .Air-can-header-right {
+    gap: 10px;
+  }
+
+  .Air-can-header-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .Air-can-header-icon img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .Air-can-avatar-wrapper {
+    width: 36px;
+    height: 36px;
+  }
+
+  .Air-can-user-profile {
+    gap: 7px;
+  }
+
+  .Air-can-user-name {
+    font-size: 12px;
+  }
+
+  .Air-can-user-role {
+    font-size: 10px;
+  }
+
+  /* Hide dropdown arrow on tablet and mobile */
+  .Air-can-user-profile .Air-can-dropdown-arrow,
+  .Air-can-dropdown-arrow {
+    display: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+  }
+
+  .Air-can-mobile-navigation {
+    display: block;
+  }
+}
+
+/* MOBILE: 480px AND BELOW */
+
+@media screen and (max-width: 480px) {
+  .Air-can-top-header {
+    min-height: 65px;
+    padding: 0 10px;
+    gap: 8px;
+  }
+
+  .Air-can-header-left {
+    gap: 7px;
+  }
+
+  .Air-can-mobile-toggle {
+    width: 28px;
+    height: 32px;
+    padding: 4px;
+  }
+
+  .Air-can-mobile-toggle span {
+    width: 19px;
+  }
+
+  .Air-can-logo-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .Air-can-header-right {
+    gap: 6px;
+  }
+
+  .Air-can-header-icon {
+    width: 28px;
+    height: 30px;
+  }
+
+  .Air-can-header-icon img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .Air-can-avatar-wrapper {
+    width: 31px;
+    height: 31px;
+  }
+
+  .Air-can-user-info {
+    display: none;
+  }
+
+  .Air-can-user-profile {
+    gap: 0;
+  }
+
+  .Air-can-mobile-search-section {
+    padding: 0 10px 12px;
+  }
+
+  .Air-can-search-wrapper {
+    height: 39px;
+  }
+
+  .Air-can-user-dropdown-menu {
+    top: calc(100% + 10px);
+    right: 0;
+    width: 175px;
+  }
+}
+
+/* HIDE TITLE AT 767px AND BELOW */
+
+@media screen and (max-width: 767px) {
+  .Air-can-title-container,
+  .Air-can-dashboard-title-top,
+  .Air-can-dashboard-subtitle {
+    display: none !important;
+  }
+
+  .Air-can-header-left {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    flex-shrink: 0;
+    min-width: 0;
+  }
+
+  .Air-can-mobile-toggle {
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  .Air-can-logo-img {
+    display: block;
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+}
+
+/* SMALL MOBILE: 370px AND BELOW */
+
+@media screen and (max-width: 370px) {
+  .Air-can-top-header {
+    padding: 0 8px;
+    gap: 5px;
+  }
+
+  .Air-can-header-left {
+    gap: 6px;
+  }
+
+  .Air-can-mobile-toggle {
+    width: 28px;
+    height: 32px;
+    padding: 4px;
+  }
+
+  .Air-can-mobile-toggle span {
+    width: 19px;
+  }
+
+  .Air-can-logo-img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .Air-can-header-right {
+    gap: 4px;
+  }
+
+  .Air-can-header-icon {
+    width: 26px;
+  }
+
+  .Air-can-header-icon img {
+    width: 17px;
+    height: 17px;
+  }
+
+  .Air-can-avatar-wrapper {
+    width: 29px;
+    height: 29px;
+  }
+}
+
+/* EXTRA SMALL MOBILE: 320px */
+
+@media screen and (max-width: 320px) {
+  .Air-can-top-header {
+    padding-left: 8px;
+    padding-right: 8px;
+    gap: 4px;
+  }
+
+  .Air-can-header-left {
+    gap: 5px;
+  }
+
+  .Air-can-mobile-toggle {
+    width: 26px;
+    height: 32px;
+    padding: 3px;
+  }
+
+  .Air-can-mobile-toggle span {
+    width: 19px;
+  }
+
+  .Air-can-logo-img {
+    width: 26px;
+    height: 26px;
+  }
+
+  .Air-can-header-right {
+    gap: 3px;
+  }
+}
+
+/* LARGE DESKTOP */
+
+@media screen and (min-width: 1921px) {
+  .Air-can-top-header {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .Air-can-desktop-search {
+    max-width: 600px;
+  }
+}
+/* Register Button */
+.Air-can-register-btn {
+  padding: 10px 20px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.Air-can-register-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.Air-can-register-btn:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 3px;
+}
+
+/* =====================================
+   MOBILE HAMBURGER NAVIGATION
+===================================== */
+
+.Air-can-mobile-navigation {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .Air-can-mobile-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .Air-can-mobile-toggle span {
+    display: block;
+    width: 23px;
+    height: 2px;
+    background: #172f5d;
+    border-radius: 5px;
+  }
+
+  .Air-can-mobile-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 14px 16px;
+    background: #ffffff;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+    z-index: 1100;
+    box-sizing: border-box;
+  }
+
+  .Air-can-mobile-nav-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 12px 14px;
+    color: #172f5d;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 7px;
+    box-sizing: border-box;
+    transition: background 0.2s ease;
+  }
+
+  .Air-can-mobile-nav-link:hover {
+    background: #edf1f8;
+  }
+
+  .Air-can-mobile-nav-link.active {
+    background: #172f5d;
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  .Air-can-mobile-nav-icon {
+    font-size: 17px;
+  }
+}
+
+/* Small mobile screens */
+@media screen and (max-width: 425px) {
+  .Air-can-mobile-navigation {
+    padding: 12px;
+  }
+
+  .Air-can-mobile-nav-link {
+    padding: 11px 12px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .Air-can-mobile-toggle {
+    width: 30px;
+    height: 32px;
+  }
+
+  .Air-can-mobile-toggle span {
+    width: 20px;
+  }
+}

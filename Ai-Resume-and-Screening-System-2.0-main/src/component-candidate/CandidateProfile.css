@@ -1,0 +1,931 @@
+/* =========================================
+
+   AI RESUME BUILDER & SCREENING SYSTEM
+
+   CANDIDATE PROFILE PAGE
+
+   ========================================= */
+
+.Air-profile-page,
+.Air-profile-page * {
+  box-sizing: border-box;
+}
+
+/* =========================================
+
+   MAIN PAGE LAYOUT
+
+   ========================================= */
+
+.Air-profile-page {
+  width: 100%;
+
+  height: 100vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  color: #172f5d;
+}
+
+/* Header stays at the top */
+
+.Air-profile-page > header {
+  position: relative;
+
+  top: 0;
+
+  z-index: 1000;
+
+  flex: 0 0 70px;
+
+  width: 100%;
+
+  background: #ffffff;
+}
+
+/* =========================================
+
+   MAIN LAYOUT
+
+   ========================================= */
+
+.Air-profile-main-layout {
+  display: flex;
+
+  align-items: stretch;
+
+  flex: 1;
+
+  width: 100%;
+
+  height: calc(100vh - 70px);
+
+  min-height: 0;
+
+  gap: 10px;
+
+  overflow: hidden;
+}
+
+/* =========================================
+
+   SIDEBAR
+
+   ========================================= */
+
+.Air-profile-sidebar {
+  width: clamp(210px, 16vw, 290px);
+  min-width: 0;
+  max-width: 290px;
+  flex: 0 0 clamp(210px, 16vw, 290px);
+  height: 100%;
+  min-height: 0;
+  margin: 0 !important;
+  padding-top: 0;
+  align-self: stretch;
+  flex-shrink: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #ffffff;
+  border-right: 1px solid var(--card-border);
+  box-sizing: border-box;
+}
+
+.Air-profile-sidebar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.Air-profile-sidebar::-webkit-scrollbar-thumb {
+  background: #c5cedb;
+
+  border-radius: 10px;
+}
+
+/* =========================================
+
+   PROFILE CONTENT
+
+   ========================================= */
+
+.Air-profile-content {
+  flex: 1;
+
+  min-width: 0;
+
+  min-height: 0;
+
+  height: 100%;
+
+  margin: 0;
+
+  overflow-y: auto;
+
+  overflow-x: hidden;
+
+  padding: 32px 14px 30px;
+
+  background: linear-gradient(
+    105deg,
+    #899bbd 0%,
+
+    #b9c4d8 23%,
+
+    #e9edf3 48%,
+
+    #ffffff 75%
+  );
+}
+
+.Air-profile-content::-webkit-scrollbar {
+  width: 5px;
+}
+
+.Air-profile-content::-webkit-scrollbar-thumb {
+  background: #aab7ca;
+
+  border-radius: 10px;
+}
+
+/* =========================================
+
+   BREADCRUMB
+
+   ========================================= */
+
+.Air-profile-breadcrumb {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin: 0 0 34px;
+
+  padding-left: 2px;
+
+  color: #172f5d;
+
+  font-size: 16px;
+
+  font-weight: 600;
+}
+
+.Air-profile-breadcrumb img {
+  width: 16px;
+
+  height: 16px;
+
+  object-fit: contain;
+}
+
+.Air-profile-breadcrumb-separator {
+  font-size: 18px;
+
+  font-weight: 600;
+}
+
+.Air-profile-current-page {
+  font-weight: 600;
+}
+
+/* =========================================
+
+   PROFILE OVERVIEW
+
+   ========================================= */
+
+.Air-profile-overview {
+  display: grid;
+
+  grid-template-columns: minmax(0, 1fr) minmax(430px, 1fr);
+
+  align-items: start;
+
+  gap: 30px;
+
+  margin: 0 0 14px;
+}
+
+/* Page Heading */
+
+.Air-profile-heading {
+  padding: 27px 14px 0;
+}
+
+.Air-profile-heading h1 {
+  margin: 0 0 18px;
+
+  color: #172f5d;
+
+  font-size: 25px;
+
+  font-weight: 700;
+}
+
+.Air-profile-heading p {
+  max-width: 490px;
+
+  margin: 0;
+
+  color: #243d65;
+
+  font-size: 17px;
+
+  line-height: 1.55;
+}
+
+/* =========================================
+
+   PROFILE COMPLETION CARD
+
+   ========================================= */
+
+.Air-profile-completion-card {
+  min-height: 176px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 38px;
+
+  padding: 22px 35px;
+
+  background: #b8c1d0;
+
+  border-radius: 7px;
+}
+
+.Air-profile-completion-info {
+  min-width: 0;
+}
+
+.Air-profile-completion-info h2 {
+  margin: 0 0 8px;
+
+  color: #172f5d;
+
+  font-size: 22px;
+
+  font-weight: 700;
+}
+
+.Air-profile-completion-info p {
+  margin: 0;
+
+  color: #263d60;
+
+  font-size: 12px;
+
+  line-height: 1.55;
+}
+
+/* =========================================
+
+   CIRCULAR PROGRESS
+
+   ========================================= */
+
+.Air-profile-progress-circle {
+  --Air-progress: 75%;
+
+  position: relative;
+
+  width: 100px;
+
+  height: 100px;
+
+  min-width: 100px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: conic-gradient(
+    #347de8 var(--Air-progress),
+    #a9c5f0 var(--Air-progress)
+  );
+}
+
+.Air-profile-progress-circle::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 8px;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+}
+
+.Air-profile-progress-inner {
+  position: relative;
+
+  z-index: 1;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #172f5d;
+
+  text-align: center;
+}
+
+.Air-profile-progress-inner strong {
+  font-size: 16px;
+
+  font-weight: 700;
+}
+
+/* Overall Progress */
+
+.Air-profile-overall-progress {
+  width: 114px;
+
+  height: 114px;
+
+  min-width: 114px;
+}
+
+.Air-profile-overall-progress::before {
+  inset: 9px;
+}
+
+.Air-profile-overall-progress .Air-profile-progress-inner strong {
+  font-size: 16px;
+}
+
+.Air-profile-overall-progress .Air-profile-progress-inner span {
+  font-size: 12px;
+
+  font-weight: 600;
+
+  line-height: 1.25;
+}
+
+/* =========================================
+
+   PROFILE SECTIONS
+
+   ========================================= */
+
+.Air-profile-sections {
+  width: 100%;
+}
+
+.Air-profile-sections-heading {
+  margin: 0 0 12px;
+
+  color: #172f5d;
+
+  font-size: 24px;
+
+  font-weight: 700;
+}
+
+/* =========================================
+
+   PROFILE CARDS GRID
+
+   ========================================= */
+
+.Air-profile-cards-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 14px;
+}
+
+/* =========================================
+
+   INDIVIDUAL PROFILE CARD
+
+   ========================================= */
+
+.Air-profile-section-card {
+  width: 100%;
+
+  height: 176px;
+
+  min-height: 176px;
+
+  display: grid;
+
+  grid-template-columns: 58px minmax(0, 1fr) 105px;
+
+  align-items: center;
+
+  column-gap: 15px;
+
+  padding: 18px 20px 18px 28px;
+
+  background: #ffffff;
+
+  border: 1px solid #d1d4da;
+
+  border-radius: 7px;
+
+  box-shadow: 0 1px 2px rgba(25, 44, 75, 0.04);
+}
+
+/* Card Icon */
+
+.Air-profile-section-icon {
+  width: 44px;
+
+  height: 44px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.Air-profile-section-icon img {
+  width: 44px;
+
+  height: 44px;
+
+  object-fit: contain;
+}
+
+/* Card Text */
+
+.Air-profile-section-details {
+  min-width: 0;
+}
+
+.Air-profile-section-details h3 {
+  margin: 0 0 12px;
+
+  color: #172f5d;
+
+  font-size: 22px;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+.Air-profile-section-details p {
+  margin: 0;
+
+  color: #1f3558;
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  line-height: 1.5;
+}
+
+/* =========================================
+
+   CARD PROGRESS AND ACTION BUTTONS
+
+   ========================================= */
+
+.Air-profile-card-actions {
+  height: 140px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.Air-profile-card-actions .Air-profile-progress-circle {
+  width: 100px;
+
+  height: 100px;
+
+  min-width: 100px;
+}
+
+/* Edit / Continue Button */
+
+.Air-profile-action-button {
+  width: 88px;
+
+  min-height: 24px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 4px 8px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: #142e5b;
+
+  color: #ffffff;
+
+  font-size: 12px;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.Air-profile-action-button:hover {
+  background: #244b87;
+}
+
+.Air-profile-action-button img {
+  width: 13px;
+
+  height: 13px;
+
+  object-fit: contain;
+}
+
+/* =========================================
+
+   LARGE DESKTOP
+
+   ========================================= */
+
+@media (min-width: 1201px) {
+  .Air-profile-main-layout {
+    gap: 10px;
+  }
+
+  .Air-profile-content {
+    padding: 32px 14px 30px;
+  }
+
+  .Air-profile-cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+  }
+
+  .Air-profile-section-card {
+    height: 176px;
+  }
+}
+
+/* =========================================
+
+   LAPTOP / SMALL DESKTOP
+
+   ========================================= */
+
+@media (max-width: 1200px) {
+  .Air-profile-content {
+    padding: 25px 12px;
+  }
+
+  .Air-profile-overview {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .Air-profile-heading {
+    padding: 5px 10px;
+  }
+
+  .Air-profile-completion-card {
+    max-width: 100%;
+  }
+
+  .Air-profile-section-card {
+    grid-template-columns: 48px minmax(0, 1fr) 90px;
+
+    padding: 16px;
+
+    column-gap: 10px;
+  }
+
+  .Air-profile-section-details h3 {
+    font-size: 19px;
+  }
+
+  .Air-profile-section-details p {
+    font-size: 14px;
+  }
+}
+
+/* =========================================
+   TABLET - SIDEBAR HIDDEN, TWO-COLUMN CARDS
+   ========================================= */
+
+@media (max-width: 900px) {
+  .Air-profile-sidebar {
+    display: none !important;
+  }
+
+  .Air-profile-main-layout {
+    display: block;
+    width: 100%;
+    height: calc(100vh - 70px);
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .Air-profile-content {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 25px 16px;
+  }
+
+  .Air-profile-overview {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .Air-profile-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .Air-profile-section-card {
+    width: 100%;
+    min-width: 0;
+    height: 176px;
+    min-height: 176px;
+    grid-template-columns: 42px minmax(0, 1fr) 76px;
+    gap: 8px;
+    padding: 12px 9px;
+  }
+
+  .Air-profile-section-details h3 {
+    font-size: 15px;
+  }
+
+  .Air-profile-section-details p {
+    font-size: 12px;
+  }
+
+  .Air-profile-card-actions {
+    height: 125px;
+  }
+
+  .Air-profile-card-actions .Air-profile-progress-circle {
+    width: 75px;
+    height: 75px;
+    min-width: 75px;
+  }
+}
+
+/* =========================================
+
+   MOBILE
+
+   ========================================= */
+
+@media (max-width: 600px) {
+  .Air-profile-sidebar {
+    display: none !important;
+  }
+
+  .Air-profile-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .Air-profile-page {
+    height: 100vh;
+
+    overflow: hidden;
+  }
+
+  .Air-profile-main-layout {
+    display: block;
+
+    height: calc(100vh - 70px);
+
+    overflow: hidden;
+  }
+
+  .Air-profile-sidebar {
+    display: none;
+  }
+
+  .Air-profile-content {
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 0;
+
+    overflow-y: auto;
+
+    padding: 20px 12px;
+  }
+
+  /* Breadcrumb */
+
+  .Air-profile-breadcrumb {
+    margin-bottom: 20px;
+
+    font-size: 14px;
+  }
+
+  /* Heading */
+
+  .Air-profile-heading h1 {
+    font-size: 23px;
+  }
+
+  .Air-profile-heading p {
+    font-size: 14px;
+  }
+
+  /* Completion Card */
+
+  .Air-profile-completion-card {
+    min-height: 145px;
+
+    gap: 18px;
+
+    padding: 18px;
+  }
+
+  .Air-profile-overall-progress {
+    width: 95px;
+
+    height: 95px;
+
+    min-width: 95px;
+  }
+
+  .Air-profile-completion-info h2 {
+    font-size: 18px;
+  }
+
+  .Air-profile-completion-info p {
+    font-size: 11px;
+  }
+
+  .Air-profile-desktop-break {
+    display: none;
+  }
+
+  /* Section Heading */
+
+  .Air-profile-sections-heading {
+    font-size: 21px;
+  }
+
+  /* Cards */
+
+  .Air-profile-cards-grid {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+  .Air-profile-section-card {
+    grid-template-columns: 42px minmax(0, 1fr) 76px;
+
+    gap: 8px;
+
+    min-height: 145px;
+
+    height: 145px;
+
+    padding: 12px 9px;
+  }
+
+  .Air-profile-section-icon,
+  .Air-profile-section-icon img {
+    width: 36px;
+
+    height: 36px;
+  }
+
+  .Air-profile-section-details h3 {
+    font-size: 15px;
+
+    margin-bottom: 8px;
+  }
+
+  .Air-profile-section-details p {
+    font-size: 12px;
+
+    line-height: 1.4;
+  }
+
+  /* Card Actions */
+
+  .Air-profile-card-actions {
+    height: 115px;
+  }
+
+  .Air-profile-card-actions .Air-profile-progress-circle {
+    width: 75px;
+
+    height: 75px;
+
+    min-width: 75px;
+  }
+
+  .Air-profile-card-actions .Air-profile-progress-circle::before {
+    inset: 6px;
+  }
+
+  .Air-profile-progress-inner strong {
+    font-size: 13px;
+  }
+
+  .Air-profile-action-button {
+    width: 75px;
+
+    min-height: 23px;
+
+    gap: 5px;
+
+    font-size: 10px;
+  }
+
+  .Air-profile-action-button img {
+    width: 11px;
+
+    height: 11px;
+  }
+}
+
+/* =========================================
+
+   SMALL MOBILE
+
+   ========================================= */
+
+@media (max-width: 360px) {
+  .Air-profile-section-card {
+    grid-template-columns: 34px minmax(0, 1fr) 68px;
+
+    gap: 5px;
+
+    padding: 10px 6px;
+  }
+
+  .Air-profile-section-details h3 {
+    font-size: 13px;
+  }
+
+  .Air-profile-section-details p {
+    font-size: 11px;
+  }
+
+  .Air-profile-card-actions .Air-profile-progress-circle {
+    width: 65px;
+
+    height: 65px;
+
+    min-width: 65px;
+  }
+
+  .Air-profile-action-button {
+    width: 67px;
+
+    font-size: 9px;
+  }
+}
+
+/* =========================================
+
+   END OF FILE
+
+   ========================================= */
+
+/* =========================================
+
+   TABLET RESPONSIVE - 768px
+
+\========================================= */
